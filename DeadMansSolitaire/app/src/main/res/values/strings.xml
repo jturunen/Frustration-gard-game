@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dead Mans Solitaire</string>
+    <string name="Win">Winner!!</string>
+    <string name="player_lost">You are dead.</string>
+    <string name="losingText_placeholder">Game on</string>
+    <string name="nextCard_placeholder">Tap the deck to start again</string>
+</resources>
