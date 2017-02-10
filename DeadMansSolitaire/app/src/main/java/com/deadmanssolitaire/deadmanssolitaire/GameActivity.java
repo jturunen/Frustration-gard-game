@@ -55,7 +55,7 @@ public class GameActivity extends AppCompatActivity{
         totalCards = deck.getTotalCards();
         shuffle();
         nullVars();
-        Log.d("Jeba", "onCreate");
+        Log.d("LOGI", "onCreate");
     }
     ArrayList<String> pickedCards = new ArrayList<>();
     protected void drawCard(View v){
@@ -64,25 +64,25 @@ public class GameActivity extends AppCompatActivity{
         assert losingText != null;
         losingText.setText(R.string.losingText_placeholder);
         if (!dead) {
-            Log.d("Jeba", "drawCard alkaa");
-            Log.d("Jeba", String.valueOf(killerCard));
+            Log.d("LOGI", "drawCard alkaa");
+            Log.d("LOGI", String.valueOf(killerCard));
             //Draws a card from the deck
             C = deck.drawFromDeck();
-            Log.d("Jeba", "kortti nostettu pakasta");
-            Log.d("Jeba", C.toString());
+            Log.d("LOGI", "kortti nostettu pakasta");
+            Log.d("LOGI", C.toString());
 
             pickedCards.add(C.toString());
 
             int listSize = pickedCards.size();
-            Log.d("Jeba", String.valueOf(listSize));
+            Log.d("LOGI", String.valueOf(listSize));
             for (int i = 0; i < listSize; i++) {
-                Log.i("Jeba: ", pickedCards.get(i));
+                Log.i("LOGI: ", pickedCards.get(i));
             }
 
             //Check if the card is the same as the next card in the order
             if (C.rank == killerCard) {
-                Log.d("Jeba", C.toString());
-                Log.d("Jeba", "dead");
+                Log.d("LOGI", C.toString());
+                Log.d("LOGI", "dead");
                 dead = true;
                 losingText.setText(R.string.player_lost);
             }
@@ -145,7 +145,7 @@ public class GameActivity extends AppCompatActivity{
                 rounds++;
 
                 if (rounds == 4) {
-                    Log.d("Jeba", "pelaaja voitti");
+                    Log.d("LOGI", "pelaaja voitti");
                     losingText.setText(R.string.Win);
                 } else {
                     System.out.println("Round " + rounds + " passed. " + (4 - rounds) + " left.");

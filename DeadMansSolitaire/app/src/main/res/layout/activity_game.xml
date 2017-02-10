@@ -10,16 +10,6 @@
     tools:context="com.deadmanssolitaire.deadmanssolitaire.GameActivity"
     android:background="@drawable/index">
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="250dp"
-        android:id="@+id/button"
-        android:background="@drawable/cardback"
-        android:onClick="drawCard"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <ImageView
         android:layout_width="150dp"
         android:layout_height="250dp"
@@ -87,4 +77,13 @@
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
         android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:id="@+id/button"
+        android:background="@drawable/cardback"
+        android:onClick="drawCard"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
